@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Azure Review Analyzer</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Azure Customer Review Analyzer PRO</h1>
+<h2>Created By Protistha</h2>
+<input
+id="key"
+placeholder="Enter Azure Key"
+/>
+
+<input
+id="endpoint"
+placeholder="Enter Endpoint"
+/>
+
+<textarea id="review"
+placeholder="Enter customer review">
+</textarea>
+
+<div class="buttons">
+
+<button onclick="analyze()">
+Analyze
+</button>
+
+<button onclick="clearText()" class="clear">
+Clear
+</button>
+
+</div>
+
+<div id="loading">
+Analyzing...
+</div>
+
+<div id="result">
+
+<h2 id="emoji"></h2>
+
+<p>
+
+<b>Sentiment:</b>
+
+<span id="sentiment">
+
+</span>
+
+</p>
+
+<div class="bar">
+
+Positive
+
+<div class="progress">
+
+<div id="pos">
+
+</div>
+
+</div>
+
+</div>
+
+<div class="bar">
+
+Neutral
+
+<div class="progress">
+
+<div id="neu">
+
+</div>
+
+</div>
+
+</div>
+
+<div class="bar">
+
+Negative
+
+<div class="progress">
+
+<div id="neg">
+
+</div>
+
+</div>
+
+</div>
+
+<p>
+
+<b>Key Phrases:</b>
+
+<span id="phrases">
+
+</span>
+
+</p>
+
+</div>
+
+<h2>Review History</h2>
+
+<table id="history">
+
+<tr>
+
+<th>Review</th>
+
+<th>Sentiment</th>
+
+</tr>
+
+</table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
